@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>RecyCash - Mode Offline</title>
+    <link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 48 48'%3E%3Crect width='48' height='48' rx='14' fill='%2314532D'/%3E%3Cpath d='M32 12c-8 1-13 6-13 14 7 0 12-5 13-14Z' fill='%23fff'/%3E%3Ccircle cx='36' cy='36' r='8' fill='%23F2C55C'/%3E%3C/svg%3E">
+    <style>
+        * { margin: 0; padding: 0; box-sizing: border-box; }
+        body {
+            min-height: 100vh;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            background: linear-gradient(160deg, #0a130e 0%, #14532d 100%);
+            font-family: 'Plus Jakarta Sans', 'Segoe UI', Arial, sans-serif;
+            color: #fff;
+            padding: 24px;
+        }
+        .card-offline {
+            text-align: center;
+            max-width: 420px;
+            background: rgba(255, 255, 255, 0.06);
+            border: 1px solid rgba(255, 255, 255, 0.14);
+            border-radius: 20px;
+            padding: 40px 32px;
+            backdrop-filter: blur(8px);
+        }
+        .card-offline .icon {
+            width: 72px;
+            height: 72px;
+            border-radius: 20px;
+            background: rgba(163, 230, 53, 0.15);
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            margin: 0 auto 20px;
+            font-size: 34px;
+        }
+        .card-offline h1 { font-size: 22px; font-weight: 800; margin-bottom: 8px; }
+        .card-offline p { font-size: 14px; line-height: 1.7; color: #c8d6cf; }
+        .card-offline button {
+            margin-top: 22px;
+            padding: 10px 22px;
+            border: none;
+            border-radius: 10px;
+            background: #a3e635;
+            color: #14532d;
+            font-weight: 700;
+            font-size: 14px;
+            cursor: pointer;
+        }
+        .card-offline button:hover { background: #bef264; }
+    </style>
+</head>
+<body>
+    <div class="card-offline">
+        <div class="icon">&#127807;</div>
+        <h1>Anda Sedang Offline</h1>
+        <p>
+            Koneksi internet terputus, sehingga halaman RecyCash tidak dapat dimuat.
+            Halaman dan aset yang pernah dibuka akan tetap tersedia setelah koneksi kembali.
+        </p>
+        <p style="margin-top:10px; font-size:13px; color:#8fb3a3;">
+            Data transaksi tetap aman &mdash; tunggu koneksi pulih lalu coba lagi.
+        </p>
+        <button onclick="window.location.reload()">Coba Lagi</button>
+    </div>
+</body>
+</html>

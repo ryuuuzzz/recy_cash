@@ -1,0 +1,50 @@
+# ============================================================
+# RecyCash â€” .gitignore
+# ============================================================
+
+# ---------- Konfigurasi sensitif (JANGAN di-commit) ----------
+# Berisi kredensial DB, SMTP, Xendit secret, Google Maps API key.
+# Salin dari *.example.php lalu isi manual.
+config/koneksi.php
+config/mail_config.php
+config/payment_config.php
+config/maps_config.php
+
+# ---------- Upload pengguna ----------
+uploads/
+!uploads/.gitkeep
+
+# ---------- Log & cache ----------
+*.log
+*.tmp
+*.txt
+*.cache
+storage/
+cache/
+
+# ---------- Environment ----------
+.env
+.env.*
+!.env.example
+
+# ---------- IDE / editor ----------
+.vscode/
+.idea/
+*.sublime-project
+*.sublime-workspace
+*.code-workspace
+
+# ---------- OS ----------
+.DS_Store
+Thumbs.db
+desktop.ini
+
+# ---------- Dependency / build ----------
+vendor/
+node_modules/
+npm-debug.log
+yarn-error.log
+
+# ---------- PHP ----------
+*.php~
+*.bak

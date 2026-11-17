@@ -1,0 +1,32 @@
+{
+    "name": "RecyCash - Daur Ulang Jadi Cuan",
+    "short_name": "RecyCash",
+    "description": "Aplikasi bank sampah RecyCash: setoran, penjemputan, penarikan saldo, dan gudang.",
+    "lang": "id",
+    "start_url": "./index.php",
+    "scope": "./",
+    "display": "standalone",
+    "orientation": "portrait-primary",
+    "background_color": "#14532D",
+    "theme_color": "#14532D",
+    "icons": [
+        {
+            "src": "assets/img/icon-192.png",
+            "sizes": "192x192",
+            "type": "image/png",
+            "purpose": "any"
+        },
+        {
+            "src": "assets/img/icon-512.png",
+            "sizes": "512x512",
+            "type": "image/png",
+            "purpose": "any"
+        },
+        {
+            "src": "assets/img/icon-512.png",
+            "sizes": "512x512",
+            "type": "image/png",
+            "purpose": "maskable"
+        }
+    ]
+}

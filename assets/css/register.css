@@ -1,0 +1,535 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    background: linear-gradient(135deg, #e8f5e9, #c8e6c9, #a5d6a7);
+    min-height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 20px;
+}
+
+
+/* ======================== CONTAINER ======================== */
+
+.auth-container {
+    width: 1000px;
+    max-width: 100%;
+    background: #fff;
+    display: grid;
+    grid-template-columns: 1fr 1.1fr;
+    border-radius: 20px;
+    overflow: hidden;
+    box-shadow: 0 25px 60px rgba(27, 94, 32, 0.15);
+}
+
+
+/* ======================== ILLUSTRASI ======================== */
+
+.illustration {
+    background: linear-gradient(160deg, #e8f5e9, #c8e6c9);
+    padding: 50px 40px;
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+}
+
+
+/* ======================== LOGO ======================== */
+
+.logo {
+    display: flex;
+    align-items: center;
+    gap: 14px;
+    margin-bottom: 40px;
+}
+
+.logo-icon {
+    position: relative;
+    width: 55px;
+    height: 55px;
+    border-radius: 14px;
+    background: #2e7d32;
+    color: #fff;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 28px;
+    box-shadow: 0 4px 12px rgba(46, 125, 50, 0.3);
+}
+
+.logo-coin {
+    position: absolute;
+    right: -6px;
+    bottom: -6px;
+    width: 22px;
+    height: 22px;
+    border-radius: 50%;
+    background: linear-gradient(135deg, #ffd54f, #f9a825);
+    color: #7a4f00;
+    font-size: 13px;
+    font-weight: 800;
+    line-height: 1;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border: 2px solid #e8f5e9;
+    box-shadow: 0 1px 3px rgba(0, 0, 0, 0.35);
+}
+
+.logo-text h2 {
+    color: #1b5e20;
+    font-size: 22px;
+    line-height: 1.2;
+}
+
+.logo-text p {
+    color: #4caf50;
+    font-size: 12px;
+    font-weight: 500;
+    letter-spacing: 0.5px;
+}
+
+
+/* ======================== ECO IMAGE ======================== */
+
+.eco-image {
+    width: 220px;
+    height: 220px;
+    position: relative;
+    margin: 10px 0 30px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.trash-bin {
+    width: 120px;
+    height: 140px;
+    background: #2e7d32;
+    border-radius: 18px 18px 30px 30px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: #fff;
+    font-size: 55px;
+    box-shadow: 0 10px 25px rgba(0, 0, 0, 0.1);
+    position: relative;
+    z-index: 2;
+}
+
+.trash-bin::before {
+    content: "";
+    position: absolute;
+    top: -8px;
+    left: 10%;
+    width: 80%;
+    height: 10px;
+    background: #2e7d32;
+    border-radius: 5px 5px 0 0;
+}
+
+.plant {
+    position: absolute;
+    font-size: 60px;
+    bottom: 10px;
+    z-index: 1;
+}
+
+.plant.left {
+    left: 0;
+}
+
+.plant.right {
+    right: 0;
+}
+
+.trash {
+    position: absolute;
+    font-size: 40px;
+    bottom: 5px;
+    left: 30%;
+    z-index: 3;
+}
+
+
+/* ======================== ILLUSTRATION TEXT ======================== */
+
+.illustration h1 {
+    color: #1b5e20;
+    font-size: 24px;
+    margin-bottom: 10px;
+}
+
+.illustration > p {
+    color: #558b2f;
+    line-height: 1.6;
+    font-size: 14px;
+    max-width: 280px;
+}
+
+
+/* ======================== FORM ======================== */
+
+.form-container {
+    padding: 40px 42px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+.form-container h1 {
+    font-size: 26px;
+    color: #1b5e20;
+    margin-bottom: 6px;
+}
+
+.subtitle {
+    color: #747b86;
+    margin-bottom: 28px;
+    font-size: 14px;
+}
+
+
+/* ======================== FORM ROW ======================== */
+
+.form-row {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 14px;
+}
+
+
+/* ======================== FORM GROUP ======================== */
+
+.form-group {
+    margin-bottom: 18px;
+}
+
+.form-group label {
+    display: block;
+    font-weight: 600;
+    font-size: 13px;
+    color: #222b35;
+    margin-bottom: 7px;
+}
+
+
+/* ======================== INPUT ======================== */
+
+.input-box {
+    height: 46px;
+    border: 1.5px solid #d9dfe3;
+    border-radius: 10px;
+    display: flex;
+    align-items: center;
+    padding: 0 14px;
+    transition: all 0.25s ease;
+    background: #f9fafb;
+}
+
+.input-box:focus-within {
+    border-color: #2e7d32;
+    box-shadow: 0 0 0 3px rgba(46, 125, 50, 0.1);
+    background: #fff;
+}
+
+.input-box .icon {
+    color: #2e7d32;
+    margin-right: 10px;
+    font-size: 17px;
+    display: flex;
+    align-items: center;
+}
+
+.input-box input {
+    width: 100%;
+    height: 100%;
+    border: none;
+    outline: none;
+    background: transparent;
+    font-size: 14px;
+    color: #333;
+}
+
+.input-box input::placeholder {
+    color: #aab0b7;
+}
+
+.input-box select {
+    width: 100%;
+    height: 100%;
+    border: none;
+    outline: none;
+    background: transparent;
+    font-size: 14px;
+    color: #333;
+    cursor: pointer;
+    -webkit-appearance: none;
+    -moz-appearance: none;
+    appearance: none;
+}
+
+.input-box:has(select) {
+    position: relative;
+}
+
+.input-box:has(select)::after {
+    content: "▾";
+    position: absolute;
+    right: 14px;
+    color: #2e7d32;
+    font-size: 14px;
+    pointer-events: none;
+}
+
+
+/* ======================== PASSWORD TOGGLE ======================== */
+
+.show-password {
+    border: none;
+    background: transparent;
+    cursor: pointer;
+    font-size: 16px;
+    padding: 4px;
+    color: #747b86;
+    transition: color 0.2s;
+}
+
+.show-password:hover {
+    color: #2e7d32;
+}
+
+
+/* ======================== ALERTS ======================== */
+
+.alert-error {
+    background: #ffebee;
+    color: #c62828;
+    padding: 12px 16px;
+    border-radius: 10px;
+    margin-bottom: 20px;
+    font-size: 13px;
+    border-left: 4px solid #c62828;
+    display: flex;
+    align-items: center;
+    gap: 8px;
+}
+
+.alert-error::before {
+    content: "\26A0";
+    font-size: 16px;
+}
+
+.alert-success {
+    background: #e8f5e9;
+    color: #2e7d32;
+    padding: 12px 16px;
+    border-radius: 10px;
+    margin-bottom: 20px;
+    font-size: 13px;
+    border-left: 4px solid #2e7d32;
+    display: flex;
+    align-items: center;
+    gap: 8px;
+}
+
+.alert-success::before {
+    content: "\2714";
+    font-size: 16px;
+}
+
+.alert-info {
+    background: #e3f2fd;
+    color: #0d47a1;
+    padding: 12px 16px;
+    border-radius: 10px;
+    margin-bottom: 20px;
+    font-size: 13px;
+    border-left: 4px solid #0d47a1;
+    display: flex;
+    align-items: center;
+    gap: 8px;
+    line-height: 1.6;
+}
+
+.alert-info::before {
+    content: "\2139";
+    font-size: 16px;
+    flex-shrink: 0;
+}
+
+
+/* ======================== DIVIDER ======================== */
+
+.divider {
+    display: flex;
+    align-items: center;
+    gap: 15px;
+    color: #969da5;
+    font-size: 13px;
+    margin: 20px 0;
+}
+
+.divider::before,
+.divider::after {
+    content: "";
+    height: 1px;
+    background: #e2e5e7;
+    flex: 1;
+}
+
+
+/* ======================== BUTTON ======================== */
+
+.btn-primary {
+    width: 100%;
+    height: 48px;
+    border: none;
+    border-radius: 10px;
+    background: linear-gradient(135deg, #2e7d32, #1b5e20);
+    color: #fff;
+    font-size: 15px;
+    font-weight: 700;
+    cursor: pointer;
+    transition: all 0.25s ease;
+    letter-spacing: 0.5px;
+    margin-top: 4px;
+}
+
+.btn-primary:hover {
+    transform: translateY(-2px);
+    box-shadow: 0 8px 25px rgba(27, 94, 32, 0.3);
+}
+
+.btn-primary:active {
+    transform: translateY(0);
+}
+
+
+/* ======================== LOGIN BOX ======================== */
+
+.login-box {
+    text-align: center;
+    margin-top: 20px;
+    font-size: 14px;
+    color: #666;
+}
+
+.login-box a {
+    color: #2e7d32;
+    text-decoration: none;
+    font-weight: 600;
+    transition: color 0.2s;
+}
+
+.login-box a:hover {
+    color: #1b5e20;
+    text-decoration: underline;
+}
+
+
+/* ======================== TERMS ======================== */
+
+.terms {
+    text-align: center;
+    margin-top: 16px;
+    font-size: 11px;
+    color: #969da5;
+    line-height: 1.5;
+}
+
+.terms a {
+    color: #2e7d32;
+    text-decoration: none;
+}
+
+
+/* ======================== FLOATING ELEMENTS ======================== */
+
+.float-leaf {
+    position: absolute;
+    font-size: 30px;
+    opacity: 0.5;
+    animation: floatLeaf 6s ease-in-out infinite;
+}
+
+.float-leaf:nth-child(1) {
+    top: 15%;
+    left: 10%;
+    animation-delay: 0s;
+}
+
+.float-leaf:nth-child(2) {
+    top: 60%;
+    right: 8%;
+    animation-delay: 2s;
+}
+
+.float-leaf:nth-child(3) {
+    bottom: 20%;
+    left: 15%;
+    animation-delay: 4s;
+}
+
+@keyframes floatLeaf {
+    0%, 100% {
+        transform: translateY(0) rotate(0deg);
+    }
+    50% {
+        transform: translateY(-12px) rotate(10deg);
+    }
+}
+
+
+/* ======================== RESPONSIVE ======================== */
+
+@media (max-width: 900px) {
+    .auth-container {
+        grid-template-columns: 1fr;
+    }
+
+    .illustration {
+        padding: 35px 30px;
+        display: none;
+    }
+
+    .form-container {
+        padding: 35px 28px;
+    }
+
+    .form-container h1 {
+        font-size: 24px;
+    }
+
+    .form-row {
+        grid-template-columns: 1fr;
+    }
+}
+
+@media (max-width: 480px) {
+    body {
+        padding: 10px;
+    }
+
+    .form-container {
+        padding: 28px 20px;
+    }
+
+    .input-box {
+        height: 44px;
+    }
+
+    .btn-primary {
+        height: 46px;
+        font-size: 14px;
+    }
+}
